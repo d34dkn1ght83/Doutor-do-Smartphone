@@ -1,0 +1,155 @@
+@media screen and (min-width: 600px) {
+
+    :root {
+        --primary_0: #FF0000;
+        --primary_1: #FFFFFF;
+        --second_0: #393939;
+        --second_1: #737373;
+        --second_2: #F25757;
+    }
+    .container {
+        color: var(--second_0);
+        width: 80%;
+        padding: 2%;
+        margin: 0 auto;
+        border: 1px solid white;
+    }
+
+    .container a {
+        color: var(--second_0);
+        text-decoration: none;
+        font-size: .95em;
+    }
+
+    .container h1 {
+        font-weight: 500;
+        font-size: .95em;
+        padding: 5% 0 1% 0;
+    }
+
+    #email {
+        margin: 0 0 2% 0;
+    }
+
+    .lojas {
+        font-weight: 400;
+        font-size: .85em;
+        padding: 1% 0 ;
+    }
+
+    .lojas p {
+        padding: .5%;
+    }
+
+    .whatsapp {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: .2%;
+    }
+
+    .whatsapp:hover {
+        cursor: pointer;
+    }
+
+    .horario {
+        padding: 10% 0 15% 0;
+    }
+
+    .horario h2 {
+        font-size: .95em;
+        font-weight: 500;
+        padding: 1% 0;
+    }
+
+    .horario p {
+        font-size: .8em;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 74vh;
+        overflow: hidden;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 1%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    :root {
+        --primary_0: #FF0000;
+        --primary_1: #FFFFFF;
+        --second_0: #393939;
+        --second_1: #737373;
+        --second_2: #F25757;
+    }
+    .container {
+        color: var(--second_0);
+        width: 80%;
+        margin: 10% auto;
+        overflow: hidden;
+    }
+
+    .container a {
+        color: var(--second_0);
+        text-decoration: none;
+        font-size: .95em;
+    }
+
+    .container h1 {
+        font-weight: 500;
+        font-size: 1em;
+        padding: 4% 0;
+    }
+
+    #email {
+        margin: 0 0 2% 0;
+    }
+
+    .lojas {
+        font-weight: 400;
+        font-size: .85em;
+        padding: 1% 0 ;
+    }
+
+    .lojas p {
+        padding: .5%;
+    }
+
+    .whatsapp {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        gap: .2%;
+    }
+
+    .whatsapp:hover {
+        cursor: pointer;
+    }
+
+    .horario {
+        padding: 20% 0;
+    }
+
+    .horario h2 {
+        font-size: .95em;
+        font-weight: 500;
+        padding: 2% 0;
+    }
+
+    .horario p {
+        font-size: .8em;
+    }
+
+    .mapa {
+        width: 200%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1%;
+    }
+}
+

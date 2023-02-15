@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+:root {
+    --primary_0: #FF0000;
+    --primary_1: #FFFFFF;
+    --second_0: #393939;
+    --second_1: #737373;
+    --second_2: #F25757;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu';
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    background-color: #030303;
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+#nav-footer {
+    padding: 0 5%;
+}
+
+#nav-footer ul {
+    text-align: center;
+}
+
+#nav-footer a {
+    color: var(--primary_1);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+#footer-social {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+#footer-social p {
+    color: white;
+    text-transform: uppercase;
+    font-size: .6em;
+}
+
+@media screen and (min-width: 600px) {
+    
+    header {
+        background-color: #030303;
+        border-bottom: 2px solid #1f1f1f;
+        position: fixed;
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5em;
+        padding-left: 1em;
+    }
+
+    .ghost {
+        height: 12vh;
+        width: 100%;
+    }
+
+    #logo {
+        height: 65%;
+        width: fit-content;
+    }
+
+    #burger {
+        height: 24%;
+        width: 10%;
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    #nav-bar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+    #nav-bar a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .75em;
+        font-weight: 500;
+    }
+
+    #nav-bar a:hover {
+        color: #be0000;
+    }
+
+    .selecionado {
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        padding: .6em;
+    }
+
+    #nav-footer ul {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5%;
+    }
+    
+    #footer-social {
+        flex-flow: row nowrap;
+    }
+
+    #footer-social p {
+        width: 40%;
+        font-size: .7em;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        background-color: #030303;
+        position: fixed;
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .ghost {
+        width: 100%;
+        height: 12vh;
+    }
+
+    #logo {
+        height: 65%;
+        width: 35%;
+    }
+
+    #burger {
+        height: 24%;
+        width: 10%;
+    }
+
+    .hide-nav {
+        display: none;
+    }
+    .show-nav {
+        background-color: black;
+        position: absolute;
+        display: flex;
+        top: 12vh;
+        width: 100%;
+        height: 88vh;
+    }
+    #nav-bar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+    #nav-bar a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: .75em;
+    }
+
+    .non-clicked {
+        transition: .1s ease;
+    }
+
+    .clicked0 {
+        rotate: 45deg;
+        transform: translateX(15%) translateY(-10%);
+    }
+    .clicked1 {
+        fill: none;
+    }
+    .clicked2 {
+        rotate: -45deg;
+        transform: translateX(-45%);
+    }
+
+    .selecionado {
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        padding: .6em;
+    }
+        
+}
