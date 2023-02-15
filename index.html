@@ -10,29 +10,6 @@
     <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Doutor do Smartphone</title>
-    <style>
-        main {
-            background-color: #1a1a1a;
-            width: 100%;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 4%;
-        }
-
-        main img {
-            width: 50%;
-            max-width: 300px;
-        }
-
-        main p {
-            color: white;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -52,8 +29,36 @@
     </header>
     <div class="ghost"></div>
     <main>
-        <img src="img/logo.svg" alt="Logo Doutor do Smartphone">
-        <p>estamos chegando!</p>
+        <section class="slider">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="img/sliders/iphone-11-128gb-1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/sliders/copo-stanley-473ml-st-1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/sliders/copo-stanley-473ml1-1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/sliders/iphone-13-128gb-1.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="img/sliders/iphone-11-64gb-1.png" style="width:100%">
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="img/sliders/promo_2.png" style="width:100%">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        </section>
     </main>
     <footer>
         <div id="nav-footer">
@@ -74,5 +79,6 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/mapa.js"></script>
     <script src="scripts/page.js"></script>
+    <script src="scripts/slider.js"></script>
 </body>
 </html>
